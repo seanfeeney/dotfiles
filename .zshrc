@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
+
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # pure power autostart
@@ -100,3 +100,6 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 source $DOTFILES_DIR/.purepower
 
+alias zshconfig="mate $DOTFILES_DIR/.zshrc"
+alias vh='tmux split-window -h vim'
+alias vv='tmux split-window vim'
