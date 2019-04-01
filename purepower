@@ -86,7 +86,7 @@
 # uses.
 #
 #   * PURE_POWER_MODE=fancy     use unicode characters in the prompt (default)
-#   * PURE_POWER_MODE=portable  use only ascii characters in the prompt
+PURE_POWER_MODE=portable 
 #
 # You can switch mode on the fly by setting PURE_POWER_MODE and executing zsh. Useful when you end
 # up in an environment without a capable font and see gibberish on your screen.
