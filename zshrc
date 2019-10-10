@@ -3,12 +3,10 @@
 ZSH_DISABLE_COMPFIX=true
 # Path to your oh-my-zsh installation.
 export ZSH="/home/$USER/oh-my-zsh"
-
-# Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="gnzh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -97,9 +95,11 @@ source $ZSH/oh-my-zsh.sh
 #
 # pure power autostart
 
-source ~/dotfiles/purepower
-
-alias zshconfig="mate $DOTFILES_DIR/.zshrc"
 alias vh='tmux split-window -h vim'
 alias vv='tmux split-window vim'
 alias ccc='clear'
+alias gns='gnome-screenshot -a -f'
+
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+export PATH="$HOME/.npm/bin:$PATH"
